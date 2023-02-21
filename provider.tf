@@ -10,8 +10,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-storage-acc"
-    key    = "modules/terraform.tfstate"
+    bucket = "terraform-storage"
+    key    = "main/terraform.tfstate"
     region = "us-east-1"
   }
 }
