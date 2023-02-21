@@ -19,11 +19,7 @@ Additionally, you'll need to have an AWS account and have your credentials set u
 
 To get started with this AWS infrastructure solution using Terraform, follow these steps:
 
-1. Create an S3 bucket in the us-east-1 region with versioning enabled, and name it `terraform-storage-acc`. You can do this using the AWS CLI with the following command:
-
-```bash
-    aws s3api create-bucket --bucket terraform-storage-acc --region us-east-1 --create-bucket-configuration LocationConstraint=us-east-1 --versioning-configuration Status=Enabled
-```
+1. Create an S3 bucket in the us-east-1 region with versioning enabled, and name it `terraform-storage-acc`.
 
 2. Clone this repository to your local machine:
 
