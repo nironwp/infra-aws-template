@@ -34,3 +34,13 @@ module "aws_instance" {
   nic_id        = module.network_interface.nic_id
 }
 
+
+module "aws_instance_2" {
+  source        = "./models/aws_instance"
+  instance_ami  = var.instance_ami
+  instance_tags = var.instance_tags
+  instance_type = var.instance_type
+  device_index  = var.device_index
+  nic_id        = module.network_interface.nic_id
+}
+

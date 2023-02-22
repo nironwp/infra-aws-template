@@ -51,5 +51,12 @@ To get started with this AWS infrastructure solution using Terraform, follow the
     terraform apply plan.out
 ```
 
-
 That's it! Once the apply command has finished executing, you'll have a fully functional AWS infrastructure solution using Terraform.
+
+## Helps
+
+1. to discover your available AMIs, login with awscli in terminal and execute the next command
+
+```bash
+    aws ec2 describe-images --owners self
+```

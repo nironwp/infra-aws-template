@@ -23,7 +23,7 @@ variable "subnet_cidr" {
 
 variable "subnet_availability_zone" {
   type        = string
-  description = "The availability zones: us-east-1a, us-east-1b, us-east-1c, us-east-1d, us-east-1e, us-east-1f"
+  description = "The availability zones: eu-west-1a, eu-west-1b, eu-west-1c"
 }
 
 variable "subnet_name" {
@@ -60,13 +60,13 @@ variable "nic_tags" {
 }
 
 variable "instance_ami" {
-  type    = string
-  default = "ami-0557a15b87f6559cf"
+  description = "The normal instances ami"
+  type        = string
 }
 
 variable "instance_type" {
-  type    = string
-  default = "t2.micro"
+  description = "The normal instances type, to developing is recomended ${"t2.micro"}"
+  type        = string
 }
 
 
